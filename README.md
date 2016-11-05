@@ -19,3 +19,8 @@ Well, I think this code does not reqire any explanation. But, that's not everyth
 
 ```
 You could even specify what each of the [open], [explore], and  [autorun] commands dose. And finally, just like TNT, it was used mainly for evil and it was removed from all later vesions (not completely)
+
+
+##Instructions
+To install DEW, just save [this](DEW.vbs) visual basic script (of size less than 1KB) on your startup folder.
+Note: the startup folder is located in C:\Users\[user]\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup for windows 7-8
