@@ -27,11 +27,13 @@ The above *autorun.inf* specifies what each of the [open], [explore], and  [auto
 Later on, virus developers had some trouble making their application run by itself after disbling autorun. And the main challenge was switched to ***"How to make the user run the virus?"*** but unfortunately, that wasn't really a "*challend*"
 
 ####Folder-like Shortct trick
-Currently the most common trick to make the user run the virus is to:
+Currently the most common trick to make the user run the virus is:
  1. The virus hides the original content of the pin-drive
  2. The virus displays nothing in the pin drive but a shortcut to the virus
  3. When the user runs the virus, it trys to demonstrate that everything is fine by opening the folder containing the original content of the pin-drive.
-
+And please note that:
+ 1. Most versions of windows allow any item (file or folder) to be represented in any icon.
+ 2. The user clicks on the shortcut because it seems to be the only way to the drive's content.
 
 ##Instructions
 To install DEW, just save [this](https://raw.githubusercontent.com/meena-hanna/DEW/master/DEW.vbs) visual basic script (of size less than 1KB) on your startup folder.
