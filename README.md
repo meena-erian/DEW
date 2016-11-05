@@ -5,15 +5,15 @@ A common problem that annoys many windows users is that developing a malware to 
 I hope my extremely simple application protect many inexpert users from most nowadays computer worms.
 ##History
 ####Back to Windows 2003 (XP)
-Microsoft made a double-edged sword named auto-play that means that you could specify any file in the drive to be luanched once the drive is mounted... So, lets say you have a file named setup.exe, all you have to do is:
-1 - create a new file in the pin-drive (not inside any folders) and name it autorun.inf (character case insensitive)
-2 - open it with notepade and add the following lines of plain text...
+Microsoft made a double-edged sword named auto-play that means that you could specify any file in the drive to be luanched once the drive is mounted... So, lets say you have a file named *setup.exe*, all you have to do is:
+1. Create a new file in the pin-drive (not inside any folders) and name it *autorun.inf* (character case insensitive)
+2. Open it with notepade and add the following lines of plain text...
 ```
 [AutoRun]
 open=setup.exe
 ```
 
-Well, I think this code does not reqire any explanation. But, that's not everything!
+Well, I think the above code does not reqire any explanation. But, that's not everything!
 ```
 [AutoRun]
 open = setup.exe 
@@ -22,15 +22,15 @@ shell\explore\command = setup.exe
 shell\autoplay\command = setup.exe 
 icon = icon.ico
 ```
-The above autorun.inf specifies what each of the [open], [explore], and  [autoplay] commands dose. So, lets say ***setup.exe*** is a virus, no matter what you do the viruse will be launched. And finally, just like TNT, it was mainly used for evil and it was removed from all later vesions (not completely. the icon command is supported).
+The above autorun.inf specifies what each of the [open], [explore], and  [autoplay] commands dose. So, lets say ***setup.exe*** is a virus, no matter what you do the viruse will be launched. And finally, just like TNT, it was mainly used for evil and it was removed from all later vesions (not completely. the icon line is supported).
 
 Later on, virus developers had some trouble making their application run by itself after disbling autorun. And the main challenge was switched to ***"How to make the user run the virus?"*** but unfortunately, that wasn't really a "*challend*"
 
 ####Folder-like-icon Shortct trick
 Currently the most common trick to mack the user run the virus is to:
-1 - hide the original content of the pin-drive
-2 - display nothing in the pin drive but a shortcut to the virus
-3 - when the user run the virus, try to demonstrate that everything is fine by the folder containing the original content of the pin-drive.
+1. hide the original content of the pin-drive
+2. display nothing in the pin drive but a shortcut to the virus
+3. when the user run the virus, try to demonstrate that everything is fine by the folder containing the original content of the pin-drive.
 
 
 ##Instructions
