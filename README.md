@@ -33,25 +33,28 @@ Currently the most common trick to make the user run the virus is:
  3. When the user runs the virus, it trys to demonstrate that everything is fine by opening the folder containing the original content of the pin-drive.
  
 #####Example
-
+The below screenshot shows the content of a pin-drive before baing infected.
 ![screenshot of a pin-drive](README/2016-11-06_06h39_18.png)
 
-The above screenshot shows the content of a pin-drive before baing infected.
+And that's how it looks like after being infected.
 ![screenshot of infercted drive](README/2016-11-06_06h55_16.png)
 
-And that's how it looks like after being infected.
+And that's how it looks like after showing hidden files and folders from the Folder Options
 ![screenshot of infected drive after showing hiden files and folders](README/2016-11-06_06h56_13.png)
 
-And that's how it looks like after showing hidden files and folders from the Folder Options
+
 The original content of the drive was moved to a hidden folder that has no name (actually its name is a null character) and the displayed shortcut is a shortcut to run the virus.
-![screenshot of the content of the hidden folder](README/2016-11-06_06h56_42.png)
 
 The virus itself is hidding in the same directory with the original content.
+![screenshot of the content of the hidden folder](README/2016-11-06_06h56_42.png)
+
+
+
 
 ##DEW's role
 This application does nothing until a new drive is mounted. Once that happen, it unhides any hidden files or folders and deletes any shortcuts exsisting on the drive's directory (not inside any folder).
 
 
 ##Instructions
-From any browser on windows desktop, open [DEW.vbs](/raw/master/DEW.vbs)(of size less than 1KB) and press ***Ctrl+S***, name the file ***DEW.vbs*** and save it on your startup folder.(So that it runs on the background each time you start your computer)
+From any browser on windows desktop, open [DEW.vbs](https://raw.githubusercontent.com/meena-hanna/DEW/master/DEW.vbs)(of size less than 1KB) and press ***Ctrl+S***, name the file ***DEW.vbs*** and save it on your startup folder.(So that it runs on the background each time you start your computer)
 Note: the startup folder is located in ***"C:\Users\[user]\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"*** for windows 7-8
