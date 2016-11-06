@@ -1,0 +1,74 @@
+<article class="markdown-body entry-content" itemprop="text"><h1><a id="user-content-dew" class="anchor" href="#dew" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>DEW</h1>
+
+<p>A fancy way of naming my application "Drive Explorer for Windows"</p>
+
+<h2><a id="user-content-overview" class="anchor" href="#overview" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Overview</h2>
+
+<p>A common problem that annoys many windows users is that developing a malware to spreads like an epidemic from PC to pen drive and vice versa is too easy. One thing I like the most about windows is that as a developer, it supplies me by extra more power.
+I hope my extremely simple application protect some inexpert users from most nowadays computer worms.</p>
+
+<h2><a id="user-content-history" class="anchor" href="#history" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>History</h2>
+
+<h4><a id="user-content-back-to-windows-2003-xp" class="anchor" href="#back-to-windows-2003-xp" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Back to Windows 2003 (XP)</h4>
+
+<p>Microsoft made a double-edged sword named auto-play that means that you could specify any file in the drive to be launched once the drive is mounted... So, lets say you have a file named <strong>setup.exe</strong>, all you have to do is:</p>
+
+<ol>
+<li>Create a new file in the pen drive (not inside any folders) and name it <strong>autorun.inf</strong> (character case insensitive)</li>
+<li>Open it with notepad and add the following lines of plain text...</li>
+</ol>
+
+<pre><code>[AutoRun]
+open=setup.exe
+</code></pre>
+
+<p>Well, I think the above code does not require any additional explanation. But, that's not everything!</p>
+
+<pre><code>[AutoRun]
+open = setup.exe 
+shell\open\command = setup.exe 
+shell\explore\command = setup.exe 
+shell\autoplay\command = setup.exe 
+icon = icon.ico
+</code></pre>
+
+<p>The above <strong>autorun.inf</strong> specifies what each of the [open], [explore], and  [autoplay] commands does. So, lets say <strong>setup.exe</strong> is a virus, no matter what you do, the virus will be launched. And finally, just like TNT, it was mainly used for evil and it was removed from all later versions (not completely. the icon line is supported).</p>
+
+<p>Later on, virus developers had some trouble making their application run by itself after disabling autorun. And the main challenge was switched to <strong><em>"How to make the user run the virus?"</em></strong> but unfortunately, that wasn't really a "<em>challenge</em>"</p>
+
+<h4><a id="user-content-folder-like-shortcut-trick" class="anchor" href="#folder-like-shortcut-trick" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Folder-like Shortcut trick</h4>
+
+<p>Currently the most common trick to make the user run the virus is:</p>
+
+<ol>
+<li>The virus hides the original content of the pen drive</li>
+<li>The virus displays nothing in the pen drive but a shortcut to the virus</li>
+<li>When the user runs the virus, it tries to demonstrate that everything is fine by opening the folder containing the original content of the pen drive.</li>
+</ol>
+
+<h5><a id="user-content-example" class="anchor" href="#example" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example</h5>
+
+<p>The below screenshot shows the content of a pen drive before being infected.
+<a href="/meena-hanna/DEW/blob/master/README/2016-11-06_06h39_18.png" target="_blank"><img src="/meena-hanna/DEW/raw/master/README/2016-11-06_06h39_18.png" alt="screenshot of a pin-drive" style="max-width:100%;"></a></p>
+
+<p>And that's how it looks like after being infected.
+<a href="/meena-hanna/DEW/blob/master/README/2016-11-06_06h55_16.png" target="_blank"><img src="/meena-hanna/DEW/raw/master/README/2016-11-06_06h55_16.png" alt="screenshot of infercted drive" style="max-width:100%;"></a></p>
+
+<p>And that's how it looks like after showing hidden files and folders from the Folder Options
+<a href="/meena-hanna/DEW/blob/master/README/2016-11-06_06h56_13.png" target="_blank"><img src="/meena-hanna/DEW/raw/master/README/2016-11-06_06h56_13.png" alt="screenshot of infected drive after showing hiden files and folders" style="max-width:100%;"></a></p>
+
+<p>The original content of the drive was moved to a hidden folder that has no name (actually its name is a null character) and the displayed shortcut is a shortcut to run the virus.</p>
+
+<p>The virus itself is hiding in the same directory with the original content.
+<a href="/meena-hanna/DEW/blob/master/README/2016-11-06_06h56_42.png" target="_blank"><img src="/meena-hanna/DEW/raw/master/README/2016-11-06_06h56_42.png" alt="screenshot of the content of the hidden folder" style="max-width:100%;"></a></p>
+
+<h2><a id="user-content-dews-role" class="anchor" href="#dews-role" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>DEW's role</h2>
+
+<p>This application does nothing until a new drive is mounted. Once that happen, it shows any hidden files or folders and deletes any shortcuts existing on the drive's directory (not inside any folder).</p>
+
+<h2><a id="user-content-instructions" class="anchor" href="#instructions" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Instructions</h2>
+
+<p>From any browser on windows desktop, open <a href="https://raw.githubusercontent.com/meena-hanna/DEW/master/DEW.vbs">DEW.vbs</a>(of size less than 1KB) and press <strong>Ctrl+S</strong>, name the file <strong>DEW.vbs</strong> (not <del><strong>DEW.vbs.txt</strong></del>) and save it on your startup folder.(So that it runs on the background each time you start your computer)</p>
+
+<p>Note: the startup folder is located in <strong>"C:\Users\[user]\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"</strong> for windows 7-8</p>
+</article>
