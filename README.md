@@ -17,7 +17,7 @@ Well, I think the above code does not require any additional explanation. But, t
 ```
 [AutoRun]
 open = setup.exe 
-shell\open\commaad = setup.exe 
+shell\open\command = setup.exe 
 shell\explore\command = setup.exe 
 shell\autoplay\command = setup.exe 
 icon = icon.ico
