@@ -56,6 +56,13 @@ This application does nothing until a new drive is mounted. Once that happen, it
 
 
 ##Instructions
-From any browser on windows desktop, open [DEW.vbs](https://raw.githubusercontent.com/meena-hanna/DEW/master/DEW.vbs)(of size less than 1KB) and press **Ctrl+S**, name the file **DEW.vbs** (not ~~**DEW.vbs.txt**~~) and save it on your startup folder.(So that it runs on the background each time you start your computer)
+From any browser on windows desktop, open [DEW.vbs](https://raw.githubusercontent.com/meena-hanna/DEW/master/DEW.vbs)(of size less than 1KB) and press **Ctrl+S**, name the file **DEW.vbs** (not ~~**DEW.vbs.txt**~~) and save it on your startup folder.(So that it runs on the background each time you start your computer) and double click on the file to initialize it (nothing would happen appearantly)
 
-Note: the startup folder is located in **"C:\Users\\[user]\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"** for windows 7-8
+Note: the startup folder is located in **"C:\Users\\[user]\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"** starting from windows 7 and in **"C:\Documents and Settings\\[user]\Start Menu\Programs\Startup"**  for earlier versions of windows.
+
+##Test
+After installing the application, to try it and check how it works, download [Pseudo Infected Drive.rar](https://github.com/meena-hanna/DEW/raw/master/test/Pseudo%20Infected%20Drive.rar).
+After extracting [Pseudo Infected Drive](test/Pseudo Infected Drive), it's content will simulate the content of an infected drive but it's 100% safe. Explore it and try to click on the **Trap1.lnk** shortcut that represents the shortcut to the virus and view hidden files and folders from the **Folder Option** to see the actual content.
+When you are done checking the pseudo infected drive, save it to a removable drive, unplug it from the computer, and then reconnect it again to see how DEW edits its content.
+
+Note that when you try to run the pseudo virus, windows may pop-up an alarm warning you that it was downloaded from the internet. That whould not happen in case it was an actual virus saved in a removable drive.
