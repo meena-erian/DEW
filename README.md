@@ -69,4 +69,4 @@ When you are done checking the pseudo infected drive, save it to a removable dri
 Note that when you try to run the pseudo virus, windows may pop-up an alarm warning you that it was downloaded from the internet. That whould not happen in case it was an actual virus saved in a removable drive.
 
 Please make sure to report any [issues](https://github.com/meena-hanna/DEW/issues) or suggestions.
-                                                                                                     *Thanks for reading*
+----------------------------------------------------------------------------------------------------------- *Thanks for reading*
