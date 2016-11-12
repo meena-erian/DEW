@@ -56,7 +56,7 @@ This application does nothing until a new drive is mounted. Once that happen, it
 
 
 ##Instructions
-From any browser on windows desktop, open [DEW.vbs](https://raw.githubusercontent.com/meena-hanna/DEW/master/DEW.vbs)(of size less than 1KB) and press **Ctrl+S**, name the file **DEW.vbs** (not ~~**DEW.vbs.txt**~~) and save it on your startup folder.(So that it runs on the background each time you start your computer) and double click on the file to initialize it (nothing would happen appearantly)
+From any browser on windows desktop, open [DEW.vbs](https://raw.githubusercontent.com/meena-hanna/DEW/master/DEW.vbs)(of size less than 1KB) and press **Ctrl+S**, name the file **DEW.vbs** (not ~~**DEW.vbs.txt**~~) and save it on your startup folder.(So that it runs on the background each time you start your computer) and double click on the file to initialize it (nothing would happen apparently)
 
 Note: the startup folder is located in **"C:\Users\\[user]\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"** starting from windows 7 and in **"C:\Documents and Settings\\[user]\Start Menu\Programs\Startup"**  for earlier versions of windows.
 
