@@ -13,7 +13,7 @@ Microsoft made a double-edged sword named auto-play that means that you could sp
 open=setup.exe
 ```
 
-Well, I think the above code does not require any additional explanation. But, that's not everything!
+I think the above code does not require any additional explanation. But, that's not everything!
 ```
 [AutoRun]
 open = setup.exe 
