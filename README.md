@@ -66,7 +66,7 @@ After installing the application, to try it and check how it works, download [Ps
 After extracting [Pseudo Infected Drive](test/Pseudo Infected Drive), it's content will simulate the content of an infected drive but it's 100% safe. Explore it and try to click on the **Trap1.lnk** shortcut that represents the shortcut to the virus. Then view hidden files and folders from the **Folder Option** to see the actual content.
 When you are done checking the pseudo infected drive, save it to a removable drive, unplug it from the computer, and then reconnect it again to see how DEW edits its content.
 
-Note that when you try to run the pseudo virus, windows may pop-up an alarm warning you that it was downloaded from the internet. That whould not happen in case it was an actual virus saved in a removable drive.
+Note that when you try to run the pseudo virus, windows may pop-up an alarm warning you that it was downloaded from the internet. That would not happen in case it was an actual virus saved in a removable drive.
 
 Please make sure to report any [issues](https://github.com/meena-hanna/DEW/issues) or suggestions.
 
