@@ -1,5 +1,5 @@
 # DEW
-A fancy way of naming my application "Drive Explorer for Windows"
+Drive Explorer for Windows
 ##Overview
 A common problem that annoys many windows users is that developing a malware to spreads like an epidemic from PC to pen drive and vice versa is too easy. One thing I like the most about windows is that as a developer, it supplies me by extra more power.
 I hope my extremely simple application protect some inexpert users from most nowadays computer worms.
@@ -53,6 +53,10 @@ The virus itself is hiding in the same directory with the original content.
 
 ##DEW's role
 This application does nothing until a new drive is mounted. Once that happen, it shows any hidden files or folders and deletes any shortcuts existing on the drive's directory (not inside any folder).
+
+
+##Source Code
+<script src="https://gist.github.com/meena-erian/7b987e14994a9887638750436b5fb524.js"></script>
 
 
 ##Instructions
