@@ -3,7 +3,7 @@
 '    attached to the computer and deletes any suspicious shortcuts
 '    to help protecting you from computer worms.
 '
-'    Copyright (C) 2016  Meena E. Hanna
+'    Copyright (C) 2016  Meena Erian
 '
 '    This program is free software: you can redistribute it and/or modify
 '    it under the terms of the GNU General Public License as published by
