@@ -1,10 +1,10 @@
 # DEW
 Drive Explorer for Windows
-##Overview
+## Overview
 A common problem that annoys many windows users is that developing a malware to spreads like an epidemic from PC to pen drive and vice versa is too easy. One thing I like the most about windows is that as a developer, it supplies me by extra more power.
 I hope my extremely simple application protect some inexpert users from most nowadays computer worms.
-##History
-####Back to Windows 2003 (XP)
+## History
+#### Back to Windows 2003 (XP)
 Microsoft made a double-edged sword named auto-play that means that you could specify any file in the drive to be launched once the drive is mounted... So, lets say you have a file named **setup.exe**, all you have to do is:
  1. Create a new file in the pen drive (not inside any folders) and name it **autorun.inf** (character case insensitive)
  2. Open it with notepad and add the following lines of plain text...
@@ -26,13 +26,13 @@ The above **autorun.inf** specifies what each of the [open], [explore], and  [au
 
 Later on, virus developers had some trouble making their application run by itself after disabling autorun. And the main challenge was switched to ***"How to make the user run the virus?"*** but unfortunately, that wasn't really a "*challenge*"
 
-####Folder-like Shortcut trick
+#### Folder-like Shortcut trick
 Currently the most common trick to make the user run the virus is:
  1. The virus hides the original content of the pen drive
  2. The virus displays nothing in the pen drive but a shortcut to the virus
  3. When the user runs the virus, it tries to demonstrate that everything is fine by opening the folder containing the original content of the pen drive.
  
-#####Example
+##### Example
 The below screenshot shows the content of a pen drive before being infected.
 ![screenshot of a pin-drive](README/2016-11-06_06h39_18.png)
 
@@ -51,16 +51,16 @@ The virus itself is hiding in the same directory with the original content.
 
 
 
-##DEW's role
+## DEW's role
 This application does nothing until a new drive is mounted. Once that happen, it shows any hidden files or folders and deletes any shortcuts existing on the drive's directory (not inside any folder).
 
 
-##Instructions
+## Instructions
 From any browser on windows desktop, open [DEW.vbs](https://raw.githubusercontent.com/meena-erian/DEW/master/DEW.vbs)(of size less than 1KB) and press **Ctrl+S**, name the file **DEW.vbs** (not ~~**DEW.vbs.txt**~~) and save it on your startup folder.(So that it runs on the background each time you start your computer) and double click on the file to initialize it (nothing would happen apparently)
 
 Note: the startup folder is located in **"C:\Users\\[user]\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"** starting from windows 7 and in **"C:\Documents and Settings\\[user]\Start Menu\Programs\Startup"**  for earlier versions of windows.
 
-##Test
+## Test
 After installing the application, to try it and check how it works, download [Pseudo Infected Drive.rar](https://github.com/meena-erian/DEW/raw/master/test/Pseudo%20Infected%20Drive.rar).
 
 After extracting [Pseudo Infected Drive](test/Pseudo Infected Drive), it's content will simulate the content of an infected drive but it's 100% safe. Explore it and try to click on the **Trap1.lnk** shortcut that represents the shortcut to the virus. Then view hidden files and folders from the **Folder Option** to see the actual content.
