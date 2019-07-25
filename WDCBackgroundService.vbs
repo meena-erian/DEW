@@ -1,11 +1,12 @@
-'    DEW (Drive Explorer for Windows):
+'    Windows Drive Cleaner:
 '    An application that shows hidden files on any pen drive once 
 '    attached to the computer and deletes any suspicious shortcuts
-'    to help protecting you from computer worms.
+'    to help protecting you from computer worms. Note: it runs in
+'    the background so don't expect any windows appearing.
 '
-'    Copyright (C) 2016  Meena Erian
+'    Copyright (C) 2016  Windows Drive Cleaner
 '
-'    Project origin <https://github.com/meena-erian/DEW>.
+'    Project origin <https://github.com/meena-erian/Windows-Drive-Cleaner>.
 '
 '    This program is free software: you can redistribute it and/or modify
 '    it under the terms of the GNU General Public License as published by
