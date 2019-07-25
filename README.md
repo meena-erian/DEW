@@ -1,5 +1,3 @@
-# DEW
-Drive Explorer for Windows
 ## Overview
 A common problem that annoys many windows users is that developing a malware to spreads like an epidemic from PC to pen drive and vice versa is too easy. One thing I like the most about windows is that as a developer, it supplies me by extra more power.
 I hope my extremely simple application protect some inexpert users from most nowadays computer worms.
@@ -51,23 +49,23 @@ The virus itself is hiding in the same directory with the original content.
 
 
 
-## DEW's role
-This application does nothing until a new drive is mounted. Once that happen, it shows any hidden files or folders and deletes any shortcuts existing on the drive's directory (not inside any folder).
+## What this code does
+This script waits in the background until a new drive is mounted. Once that happen, it shows any hidden files or folders and deletes any shortcuts existing on the drive's directory (not inside any folder).
 
 
 ## Instructions
-From any browser on windows desktop, open [DEW.vbs](https://raw.githubusercontent.com/meena-erian/DEW/master/DEW.vbs)(of size less than 1KB) and press **Ctrl+S**, name the file **DEW.vbs** (not ~~**DEW.vbs.txt**~~) and save it on your startup folder.(So that it runs on the background each time you start your computer) and double click on the file to initialize it (nothing would happen apparently)
+From any browser on windows desktop, open [WDCBackgroundService.vbs](https://raw.githubusercontent.com/meena-erian/Windows-Drive-Cleaner/master/WDCBackgroundService.vbs)(of size less than 1KB) and press **Ctrl+S**, name the file **WDCBackgroundService.vbs** (not ~~**WDCBackgroundService.vbs.txt**~~) and save it on your startup folder.(So that it runs on the background each time you start your computer) and double click on the file to initialize it (nothing would happen apparently)
 
 Note: the startup folder is located in **"C:\Users\\[user]\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"** starting from windows 7 and in **"C:\Documents and Settings\\[user]\Start Menu\Programs\Startup"**  for earlier versions of windows.
 
 ## Test
-After installing the application, to try it and check how it works, download [Pseudo Infected Drive.rar](https://github.com/meena-erian/DEW/raw/master/test/Pseudo%20Infected%20Drive.rar).
+After installing the application, to try it and check how it works, download [Pseudo Infected Drive.rar](https://github.com/meena-erian/Windows-Drive-Cleaner/raw/master/test/Pseudo%20Infected%20Drive.rar).
 
 After extracting [Pseudo Infected Drive](test/Pseudo Infected Drive), it's content will simulate the content of an infected drive but it's 100% safe. Explore it and try to click on the **Trap1.lnk** shortcut that represents the shortcut to the virus. Then view hidden files and folders from the **Folder Option** to see the actual content.
 When you are done checking the pseudo infected drive, save it to a removable drive, unplug it from the computer, and then reconnect it again to see how DEW edits its content.
 
 Note that when you try to run the pseudo virus, windows may pop-up an alarm warning you that it was downloaded from the internet. That would not happen in case it was an actual virus saved in a removable drive.
 
-Please make sure to report any [issues](https://github.com/meena-erian/DEW/issues) or suggestions.
+Please make sure to report any [issues](https://github.com/meena-erian/Windows-Drive-Cleaner/issues) or suggestions.
 
 -------------------------------------------------------------------------------------------------- *Thanks for reading*
